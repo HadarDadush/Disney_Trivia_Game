@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.Region?>
+
+<VBox alignment="CENTER" prefHeight="485.0" prefWidth="594.0" spacing="20" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TriviaGameController">
+    <!-- Title Label -->
+    <Label style="-fx-font-size: 40px; -fx-font-weight: bold;" text="Trivia Game" />
+    
+    <!-- Question Label -->
+    <Label fx:id="questionLabel" text="Question will appear here" style="-fx-font-size:20px;" />
+    
+    <!-- Answer Buttons -->
+    <Button fx:id="answer1Button" onAction="#handleAnswer1" text="Answer 1" style="-fx-font-size: 15px;" />
+    <Button fx:id="answer2Button" onAction="#handleAnswer2" text="Answer 2" style="-fx-font-size: 15px;" />
+    <Button fx:id="answer3Button" onAction="#handleAnswer3" text="Answer 3" style="-fx-font-size: 15px;" />
+    <Button fx:id="answer4Button" onAction="#handleAnswer4" text="Answer 4" style="-fx-font-size: 15px;" />
+    
+    <!-- Spacer to create space between answer buttons and score -->
+    <Region prefHeight="20" />
+
+    <!-- Score Label (black color) -->
+    <Label fx:id="scoreLabel" text="Score: 0" style="-fx-font-size: 25px; -fx-font-weight: bold; -fx-text-fill: black;" />
+</VBox>
